@@ -1,0 +1,85 @@
+/* General page layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #56CCF2, #2F80ED); /* A nice blue gradient */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Main weather container */
+.weather-container {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+/* Heading */
+.weather-container h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Weather data styles */
+.weather-container .temp {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.weather-container .description {
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Weather icons */
+.weather-container .icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+/* City name */
+.weather-container .city {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Input form */
+.weather-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    font-size: 16px;
+}
+
+.weather-container button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.weather-container button:hover {
+    background-color: #1976D2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 400px) {
+    .weather-container {
+        width: 90%;
+    }
+}
